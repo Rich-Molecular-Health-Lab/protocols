@@ -273,6 +273,15 @@ plugins:
       darkMode: auto
       exportPadding: 20
     order: 50
+  - source: github:quartz-community/table-of-contents
+    enabled: true
+    order: 50
+    options:
+      maxDepth: 3
+      minEntries: 1
+      showByDefault: true
+      collapseByDefault: false
+      layout: modern
 layout:
   groups:
     toolbar:
