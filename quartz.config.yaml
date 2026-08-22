@@ -9,7 +9,6 @@ configuration:
   locale: en-US
   baseUrl: rich-molecular-health-lab.github.io/protocols
   ignorePatterns:
-    - index.qmd
     - private
     - templates
     - .obsidian
