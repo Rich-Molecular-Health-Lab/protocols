@@ -345,6 +345,16 @@ plugins:
     order: 50
     options:
       numPages: 10
+  - source: github:quartz-community/content-index
+    enabled: true
+    order: 50
+    options:
+      enableSiteMap: true
+      enableRSS: true
+      rssLimit: 10
+      rssFullHtml: false
+      rssSlug: index
+      includeEmptyFiles: true
 layout:
   groups:
     toolbar:
