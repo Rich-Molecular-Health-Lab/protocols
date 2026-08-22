@@ -282,6 +282,10 @@ plugins:
       showByDefault: true
       collapseByDefault: false
       layout: modern
+  - source: github:quartz-community/spacer
+    enabled: true
+    order: 50
+    options: {}
 layout:
   groups:
     toolbar:
