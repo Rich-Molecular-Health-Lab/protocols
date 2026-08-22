@@ -1,6 +1,6 @@
 ---
-title: Welcome to Quartz
+title: Rich Lab Protocols
+author: Alicia M. Rich, Ph.D.
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Find current versions of our lab's working SOPs and Protocols here.
