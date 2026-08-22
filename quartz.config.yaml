@@ -332,6 +332,14 @@ plugins:
       lazyLoad: false
       externalLinkIcon: true
       disableBrokenWikilinks: false
+  - source: github:quartz-community/citations
+    enabled: true
+    order: 50
+    options:
+      bibliographyFile: ./bibliography.bib
+      suppressBibliography: false
+      linkCitations: false
+      csl: apa
 layout:
   groups:
     toolbar:
