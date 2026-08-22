@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
   pageTitle: Lab Manual
-  pageTitleSuffix: "Rich Lab for Molecular Health"
+  pageTitleSuffix: Rich Lab for Molecular Health
   enableSPA: true
   enablePopovers: true
   analytics:
@@ -9,6 +9,7 @@ configuration:
   locale: en-US
   baseUrl: rich-molecular-health-lab.github.io/protocols
   ignorePatterns:
+    - index.qmd
     - private
     - templates
     - .obsidian
@@ -69,7 +70,7 @@ plugins:
       parseTags: true
       parseArrows: true
       parseBlockReferences: true
-      enableInHtmlEmbed: false
+      enableInHtmlEmbed: true
       enableYouTubeEmbed: true
       enableVideoEmbed: true
       enableCheckbox: true
@@ -219,7 +220,7 @@ plugins:
       priority: 5
       condition: not-index
   - source: "@quartz-community/comments"
-    enabled: false
+    enabled: true
     options:
       provider: giscus
       options: {}
@@ -252,7 +253,7 @@ plugins:
   - source: "@quartz-community/note-properties"
     enabled: true
     options:
-      includeAll: false
+      includeAll: true
       includedProperties:
         - description
         - tags
@@ -285,7 +286,8 @@ layout:
         beforeBody: []
         left: []
         right: []
-    content: {}
+    content:
+      template: full-width
     folder:
       exclude:
         - reader-mode
