@@ -340,6 +340,11 @@ plugins:
       suppressBibliography: false
       linkCitations: false
       csl: apa
+  - source: github:quartz-community/tag-page
+    enabled: true
+    order: 50
+    options:
+      numPages: 10
 layout:
   groups:
     toolbar:
