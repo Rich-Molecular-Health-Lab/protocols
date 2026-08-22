@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Rich Lab Protocols
-  pageTitleSuffix: ""
+  pageTitle: Lab Manual
+  pageTitleSuffix: "Rich Lab for Molecular Health"
   enableSPA: true
   enablePopovers: true
   analytics:
