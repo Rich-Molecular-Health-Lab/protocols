@@ -363,6 +363,104 @@ plugins:
     enabled: true
     order: 50
     options: {}
+  - source: github:quartz-community/content-page
+    enabled: true
+    options: {}
+    order: 50
+  - source: github:quartz-community/backlinks
+    enabled: true
+    options:
+      hideWhenEmpty: true
+    order: 50
+    layout:
+      position: right
+      priority: 30
+  - source: github:quartz-community/comments
+    enabled: false
+    options:
+      provider: giscus
+      options: {}
+    order: 50
+    layout:
+      position: afterBody
+      priority: 10
+  - source: github:quartz-community/explicit-publish
+    enabled: false
+    options: {}
+    order: 50
+  - source: github:quartz-community/explorer
+    enabled: true
+    options:
+      folderDefaultState: collapsed
+      folderClickBehavior: link
+      useSavedState: true
+    order: 50
+    layout:
+      position: left
+      priority: 50
+  - source: github:quartz-community/folder-page
+    enabled: true
+    options:
+      showFolderCount: true
+      showSubfolders: true
+    order: 50
+  - source: github:quartz-community/note-properties
+    enabled: true
+    options:
+      includeAll: false
+      includedProperties:
+        - description
+        - tags
+        - aliases
+      excludedProperties: []
+      hidePropertiesView: false
+      delimiters: ---
+      language: yaml
+    order: 5
+    layout:
+      position: beforeBody
+      priority: 15
+  - source: github:quartz-community/github-flavored-markdown
+    enabled: true
+    options:
+      enableSmartyPants: true
+      linkHeadings: true
+    order: 40
+  - source: github:quartz-community/graph
+    enabled: true
+    options:
+      localGraph:
+        drag: true
+        zoom: true
+        depth: 1
+        scale: 1.1
+        repelForce: 0.5
+        centerForce: 0.3
+        linkDistance: 30
+        fontSize: 0.6
+        opacityScale: 1
+        showTags: true
+        removeTags: []
+        focusOnHover: false
+        enableRadial: false
+      globalGraph:
+        drag: true
+        zoom: true
+        depth: -1
+        scale: 0.9
+        repelForce: 0.5
+        centerForce: 0.2
+        linkDistance: 30
+        fontSize: 0.6
+        opacityScale: 1
+        showTags: true
+        removeTags: []
+        focusOnHover: true
+        enableRadial: true
+    order: 50
+    layout:
+      position: right
+      priority: 10
 layout:
   groups:
     toolbar:

@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "plugins": {
+    "backlinks": {
+      "source": "github:quartz-community/backlinks",
+      "resolved": "https://github.com/quartz-community/backlinks.git",
+      "commit": "cb445dcc3f6969e4088bb0ff4254ba59071e4243",
+      "installedAt": "2026-08-23T02:39:05.179Z"
+    },
+    "comments": {
+      "source": "github:quartz-community/comments",
+      "resolved": "https://github.com/quartz-community/comments.git",
+      "commit": "47bd29211301d08daa481727b2395d55c1207155",
+      "installedAt": "2026-08-23T02:39:37.567Z"
+    },
+    "content-page": {
+      "source": "github:quartz-community/content-page",
+      "resolved": "https://github.com/quartz-community/content-page.git",
+      "commit": "88903bf8ca884c3e66b993b2ccb455824eae7ef1",
+      "installedAt": "2026-08-23T02:38:16.867Z"
+    },
+    "explicit-publish": {
+      "source": "github:quartz-community/explicit-publish",
+      "resolved": "https://github.com/quartz-community/explicit-publish.git",
+      "commit": "98c973b6da9c410eb8518430b6cef1a182c91ba6",
+      "installedAt": "2026-08-23T02:41:12.740Z"
+    },
+    "explorer": {
+      "source": "github:quartz-community/explorer",
+      "resolved": "https://github.com/quartz-community/explorer.git",
+      "commit": "06ea3d8e206f0edaab08556191adc75b2403e832",
+      "installedAt": "2026-08-23T02:41:51.618Z"
+    },
+    "folder-page": {
+      "source": "github:quartz-community/folder-page",
+      "resolved": "https://github.com/quartz-community/folder-page.git",
+      "commit": "213a8e98c4347aca9013c0dd5a15bc80a1dca604",
+      "installedAt": "2026-08-23T02:42:12.104Z"
+    },
+    "github-flavored-markdown": {
+      "source": "github:quartz-community/github-flavored-markdown",
+      "resolved": "https://github.com/quartz-community/github-flavored-markdown.git",
+      "commit": "287c709c12806dca76882ab8ab79567d57ede5b4",
+      "installedAt": "2026-08-23T02:42:51.067Z"
+    },
+    "graph": {
+      "source": "github:quartz-community/graph",
+      "resolved": "https://github.com/quartz-community/graph.git",
+      "commit": "411971434ab698c495dfc42870eb02d3bc539b3a",
+      "installedAt": "2026-08-23T02:43:02.843Z"
+    },
+    "note-properties": {
+      "source": "github:quartz-community/note-properties",
+      "resolved": "https://github.com/quartz-community/note-properties.git",
+      "commit": "e68145b9f11b31d3168ed2755bd74f36a67dbed7",
+      "installedAt": "2026-08-23T02:42:34.454Z"
+    }
+  }
+}
