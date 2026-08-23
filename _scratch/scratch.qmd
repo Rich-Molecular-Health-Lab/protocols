@@ -1,0 +1,22 @@
+---
+title: "scratch"
+format: html
+---
+
+```{bash}
+npx quartz build --directory=../obsidian-richlab
+```
+
+```{bash}
+npx quartz create
+```
+
+
+```{bash}
+npx quartz build --serve
+```
+
+```{bash}
+npx quartz sync --no-pull
+```
+

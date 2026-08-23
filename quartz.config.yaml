@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Lab Manual
-  pageTitleSuffix: Rich Lab for Molecular Health
+  pageTitle: Quartz 5
+  pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics:
@@ -69,7 +69,7 @@ plugins:
       parseTags: true
       parseArrows: true
       parseBlockReferences: true
-      enableInHtmlEmbed: true
+      enableInHtmlEmbed: false
       enableYouTubeEmbed: true
       enableVideoEmbed: true
       enableCheckbox: true
@@ -77,14 +77,12 @@ plugins:
   - source: "@quartz-community/github-flavored-markdown"
     enabled: true
     order: 40
-    options: {}
   - source: "@quartz-community/table-of-contents"
     enabled: true
     order: 50
     layout:
       position: right
       priority: 30
-    options: {}
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:
@@ -143,8 +141,8 @@ plugins:
   - source: "@quartz-community/content-index"
     enabled: true
     options:
-      enableSiteMap: false
-      enableRSS: false
+      enableSiteMap: true
+      enableRSS: true
   - source: "@quartz-community/favicon"
     enabled: true
   - source: "@quartz-community/og-image"
@@ -254,7 +252,7 @@ plugins:
   - source: "@quartz-community/note-properties"
     enabled: true
     options:
-      includeAll: true
+      includeAll: false
       includedProperties:
         - description
         - tags
@@ -269,199 +267,12 @@ plugins:
       priority: 15
       display: all
   - source: "@quartz-community/obsidian-plugin-excalidraw"
-    enabled: false
+    enabled: true
     options:
       enableInteraction: true
       darkMode: auto
       exportPadding: 20
     order: 50
-  - source: github:quartz-community/table-of-contents
-    enabled: true
-    order: 50
-    options:
-      maxDepth: 3
-      minEntries: 1
-      showByDefault: true
-      collapseByDefault: false
-      layout: modern
-  - source: github:quartz-community/spacer
-    enabled: true
-    order: 50
-    options: {}
-  - source: github:quartz-community/note-properties
-    enabled: true
-    order: 50
-    options:
-      includeAll: false
-      includedProperties:
-        - description
-        - tags
-        - aliases
-      excludedProperties: []
-      hidePropertiesView: false
-      delimiters: ---
-      language: yaml
-  - source: github:quartz-community/obsidian-flavored-markdown
-    enabled: true
-    order: 50
-    options:
-      comments: true
-      highlight: true
-      wikilinks: true
-      callouts: true
-      mermaid: true
-      parseTags: true
-      parseBlockReferences: true
-      enableInHtmlEmbed: true
-      enableYouTubeEmbed: true
-      enableTweetEmbed: true
-      enableVideoEmbed: true
-      enableCheckbox: true
-      enableObsidianUri: true
-  - source: github:quartz-community/github-flavored-markdown
-    enabled: true
-    order: 50
-    options:
-      enableSmartyPants: true
-      linkHeadings: true
-  - source: github:quartz-community/crawl-links
-    enabled: true
-    order: 50
-    options:
-      markdownLinkResolution: absolute
-      prettyLinks: true
-      openLinksInNewTab: false
-      lazyLoad: false
-      externalLinkIcon: true
-      disableBrokenWikilinks: false
-  - source: github:quartz-community/citations
-    enabled: false
-    order: 50
-    options:
-      bibliographyFile: ./bibliography.bib
-      suppressBibliography: false
-      linkCitations: false
-      csl: apa
-  - source: github:quartz-community/tag-page
-    enabled: true
-    order: 50
-    options:
-      numPages: 10
-  - source: github:quartz-community/content-index
-    enabled: true
-    order: 50
-    options:
-      enableSiteMap: true
-      enableRSS: false
-      rssLimit: 10
-      rssFullHtml: false
-      rssSlug: index
-      includeEmptyFiles: true
-  - source:
-      name: quartz-themes
-      repo: github:saberzero1/quartz-themes
-      subdir: plugin
-    enabled: true
-    order: 50
-    options: {}
-  - source: github:quartz-community/content-page
-    enabled: true
-    options: {}
-    order: 50
-  - source: github:quartz-community/backlinks
-    enabled: true
-    options:
-      hideWhenEmpty: true
-    order: 50
-    layout:
-      position: right
-      priority: 30
-  - source: github:quartz-community/comments
-    enabled: false
-    options:
-      provider: giscus
-      options: {}
-    order: 50
-    layout:
-      position: afterBody
-      priority: 10
-  - source: github:quartz-community/explicit-publish
-    enabled: false
-    options: {}
-    order: 50
-  - source: github:quartz-community/explorer
-    enabled: true
-    options:
-      folderDefaultState: collapsed
-      folderClickBehavior: link
-      useSavedState: true
-    order: 50
-    layout:
-      position: left
-      priority: 50
-  - source: github:quartz-community/folder-page
-    enabled: true
-    options:
-      showFolderCount: true
-      showSubfolders: true
-    order: 50
-  - source: github:quartz-community/note-properties
-    enabled: true
-    options:
-      includeAll: false
-      includedProperties:
-        - description
-        - tags
-        - aliases
-      excludedProperties: []
-      hidePropertiesView: false
-      delimiters: ---
-      language: yaml
-    order: 5
-    layout:
-      position: beforeBody
-      priority: 15
-  - source: github:quartz-community/github-flavored-markdown
-    enabled: true
-    options:
-      enableSmartyPants: true
-      linkHeadings: true
-    order: 40
-  - source: github:quartz-community/graph
-    enabled: true
-    options:
-      localGraph:
-        drag: true
-        zoom: true
-        depth: 1
-        scale: 1.1
-        repelForce: 0.5
-        centerForce: 0.3
-        linkDistance: 30
-        fontSize: 0.6
-        opacityScale: 1
-        showTags: true
-        removeTags: []
-        focusOnHover: false
-        enableRadial: false
-      globalGraph:
-        drag: true
-        zoom: true
-        depth: -1
-        scale: 0.9
-        repelForce: 0.5
-        centerForce: 0.2
-        linkDistance: 30
-        fontSize: 0.6
-        opacityScale: 1
-        showTags: true
-        removeTags: []
-        focusOnHover: true
-        enableRadial: true
-    order: 50
-    layout:
-      position: right
-      priority: 10
 layout:
   groups:
     toolbar:
@@ -474,8 +285,7 @@ layout:
         beforeBody: []
         left: []
         right: []
-    content:
-      template: full-width
+    content: {}
     folder:
       exclude:
         - reader-mode
