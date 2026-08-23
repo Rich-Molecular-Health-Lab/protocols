@@ -3,7 +3,7 @@ publish: true
 title: Feces Collection
 created: 2026-08-06
 modified: 2026-08-06T11:17:27
-published: 2026-08-23T13:28:04.518-05:00
+published: 2026-08-23T13:39:19.010-05:00
 tags:
   - research
   - sop
@@ -48,16 +48,7 @@ area: research
 
 ## Introduction
 
- <div class="datacore-error-box"><p class="datacore-error-message">The datacore script failed to execute.</p><pre class="datacore-error-pre">SyntaxError: Invalid or unexpected token
->     at new Function (&lt;anonymous&gt;)
->     at evalInContext (plugin:datacore:34070:10)
->     at asyncEvalInContext (plugin:datacore:34076:28)
->     at renderer (plugin:datacore:34270:22)
->     at eval (plugin:datacore:34226:30)
->     at Object.eval [as __] (plugin:datacore:34231:7)
->     at B2 (plugin:datacore:13106:15)
->     at Array.forEach (&lt;anonymous&gt;)
->     at j2 (plugin:datacore:13049:44)</pre><button class="datacore-error-retry">Rerun</button></div>
+<span data-code-space-source-path="3_Resources/34_Lab/341_Protocols/Feces Collection.md"></span>
 
 ```dataviewjs
 
@@ -134,16 +125,16 @@ ${footer}
 
 ## Protocol
 
-- Gather <!-- IQ: =this.sample_size -->1<!-- /IQ --> [[5-mL Sterile Midi Centrifuge Tubes|Sample Collection Tube(s)]], each containing `$= dv.page("DNA_RNA-Shield").units_perRxn/1000` mL [[DNA_RNA-Shield|DNA/RNA Shield Solution]].
+- Gather 1 [[5-mL Sterile Midi Centrifuge Tubes|Sample Collection Tube(s)]], each containing `$= dv.page("DNA_RNA-Shield").units_perRxn/1000` mL [[DNA_RNA-Shield|DNA/RNA Shield Solution]].
 
-- Gather <!-- IQ: =this.sample_size -->1<!-- /IQ --> [[Sterile Collection Swabs|Sterile Swab(s)]] or other sterile instruments to scoop each sample into its respective tube.
+- Gather 1 [[Sterile Collection Swabs|Sterile Swab(s)]] or other sterile instruments to scoop each sample into its respective tube.
 
 > [!warning]
 > Do not re-use the same instrument across multiple samples, as this will cross-contaminate them!
 
 - Verify that each tube has a unique, matching sample ID written on the tube and the lid.
 
-- Visit <!-- IQ: =this.entry_url -->https://richlab-sample-entry.share.connect.posit.cloud/<!-- /IQ --> to log context data and other identifying information for this sample.
+- Visit https://richlab-sample-entry.share.connect.posit.cloud/  to log context data and other identifying information for this sample.
 
 > [!tip]- Data Entry^\[You should be able to use this app from a web browser on any device, including a phone, tablet, or computer.]
 >
