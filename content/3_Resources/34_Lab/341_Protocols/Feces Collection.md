@@ -3,7 +3,7 @@ publish: true
 title: Feces Collection
 created: 2026-08-06
 modified: 2026-08-06T11:17:27
-published: 2026-08-22T19:01:13.366-05:00
+published: 2026-08-23T13:28:04.518-05:00
 tags:
   - research
   - sop
@@ -47,6 +47,17 @@ area: research
 ---
 
 ## Introduction
+
+ <div class="datacore-error-box"><p class="datacore-error-message">The datacore script failed to execute.</p><pre class="datacore-error-pre">SyntaxError: Invalid or unexpected token
+>     at new Function (&lt;anonymous&gt;)
+>     at evalInContext (plugin:datacore:34070:10)
+>     at asyncEvalInContext (plugin:datacore:34076:28)
+>     at renderer (plugin:datacore:34270:22)
+>     at eval (plugin:datacore:34226:30)
+>     at Object.eval [as __] (plugin:datacore:34231:7)
+>     at B2 (plugin:datacore:13106:15)
+>     at Array.forEach (&lt;anonymous&gt;)
+>     at j2 (plugin:datacore:13049:44)</pre><button class="datacore-error-retry">Rerun</button></div>
 
 ```dataviewjs
 
