@@ -3,7 +3,7 @@ publish: true
 title: Feces Collection
 created: 2026-08-06
 modified: 2026-08-06T11:17:27
-published: 2026-08-22T15:11:11.188-05:00
+published: 2026-08-22T19:01:13.366-05:00
 tags:
   - research
   - sop
@@ -123,16 +123,16 @@ ${footer}
 
 ## Protocol
 
-- Gather 1 [[5-mL Sterile Midi Centrifuge Tubes|Sample Collection Tube(s)]], each containing `$= dv.page("DNA_RNA-Shield").units_perRxn/1000` mL [[DNA_RNA-Shield|DNA/RNA Shield Solution]].
+- Gather <!-- IQ: =this.sample_size -->1<!-- /IQ --> [[5-mL Sterile Midi Centrifuge Tubes|Sample Collection Tube(s)]], each containing `$= dv.page("DNA_RNA-Shield").units_perRxn/1000` mL [[DNA_RNA-Shield|DNA/RNA Shield Solution]].
 
-- Gather 1 [[Sterile Collection Swabs|Sterile Swab(s)]] or other sterile instruments to scoop each sample into its respective tube.
+- Gather <!-- IQ: =this.sample_size -->1<!-- /IQ --> [[Sterile Collection Swabs|Sterile Swab(s)]] or other sterile instruments to scoop each sample into its respective tube.
 
 > [!warning]
 > Do not re-use the same instrument across multiple samples, as this will cross-contaminate them!
 
 - Verify that each tube has a unique, matching sample ID written on the tube and the lid.
 
-- Visit https://richlab-sample-entry.share.connect.posit.cloud/ to log context data and other identifying information for this sample.
+- Visit <!-- IQ: =this.entry_url -->https://richlab-sample-entry.share.connect.posit.cloud/<!-- /IQ --> to log context data and other identifying information for this sample.
 
 > [!tip]- Data Entry^\[You should be able to use this app from a web browser on any device, including a phone, tablet, or computer.]
 >
