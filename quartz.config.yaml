@@ -83,6 +83,7 @@ plugins:
     layout:
       position: right
       priority: 30
+    options: {}
   - source: "@quartz-community/crawl-links"
     enabled: true
     options:
