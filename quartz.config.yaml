@@ -352,7 +352,7 @@ plugins:
     order: 50
     options:
       enableSiteMap: true
-      enableRSS: true
+      enableRSS: false
       rssLimit: 10
       rssFullHtml: false
       rssSlug: index
