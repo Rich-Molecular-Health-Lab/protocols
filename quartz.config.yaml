@@ -77,6 +77,7 @@ plugins:
   - source: "@quartz-community/github-flavored-markdown"
     enabled: true
     order: 40
+    options: {}
   - source: "@quartz-community/table-of-contents"
     enabled: true
     order: 50
@@ -220,7 +221,7 @@ plugins:
       priority: 5
       condition: not-index
   - source: "@quartz-community/comments"
-    enabled: true
+    enabled: false
     options:
       provider: giscus
       options: {}
@@ -268,7 +269,7 @@ plugins:
       priority: 15
       display: all
   - source: "@quartz-community/obsidian-plugin-excalidraw"
-    enabled: true
+    enabled: false
     options:
       enableInteraction: true
       darkMode: auto
@@ -334,7 +335,7 @@ plugins:
       externalLinkIcon: true
       disableBrokenWikilinks: false
   - source: github:quartz-community/citations
-    enabled: true
+    enabled: false
     order: 50
     options:
       bibliographyFile: ./bibliography.bib
